@@ -25,7 +25,7 @@ const AdminFeedback = () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/feedback/${id}`, {
+      const res = await fetch(`'https://samarvardak-backend.onrender.com/api/feedback/${id}`, {
         method: 'DELETE',
       });
 

@@ -24,7 +24,7 @@ const AdminDashboard = () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/contacts/${id}`, {
+      const res = await fetch(`'https://samarvardak-backend.onrender.com/api/contacts/${id}`, {
         method: 'DELETE',
       });
 
