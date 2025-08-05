@@ -7,7 +7,7 @@ const AdminFeedback = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/feedback')
+    fetch('https://samarvardak-backend.onrender.com/api/feedback')
       .then(res => res.json())
       .then(data => {
         setFeedbacks(data);
@@ -25,7 +25,7 @@ const AdminFeedback = () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`'https://samarvardak-backend.onrender.com/api/feedback/${id}`, {
+      const res = await fetch(`https://samarvardak-backend.onrender.com/api/feedback/${id}`, {
         method: 'DELETE',
       });
 

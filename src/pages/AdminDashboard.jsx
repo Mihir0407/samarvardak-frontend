@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/contacts')
+    fetch('https://samarvardak-backend.onrender.com/api/contacts')
       .then(res => res.json())
       .then(data => {
         setContacts(data);
@@ -24,7 +24,7 @@ const AdminDashboard = () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`'https://samarvardak-backend.onrender.com/api/contacts/${id}`, {
+      const res = await fetch(`https://samarvardak-backend.onrender.com/api/contacts/${id}`, {
         method: 'DELETE',
       });
 
