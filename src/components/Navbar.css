@@ -183,4 +183,54 @@
   transform-origin: center; /* Keeps it centered */
   margin-top: 20px;
 }
+/* Extra mobile-friendly adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    height: 80px;
+    padding: 0 0.75rem;
+  }
+
+  .navbar-inner {
+    height: 60px;
+  }
+
+  .logo {
+    height: 45px;
+    transform: none; /* Remove extra zoom for small screens */
+    margin-top: 0;
+    transform: scale(1.6); /* Adjust zoom for smaller screens */
+  }
+
+  .burger {
+    padding: 10px;
+    gap: 4px;
+  }
+
+  .burger .bar {
+    width: 22px;
+    height: 2.5px;
+  }
+
+  .mobile-menu ul {
+    padding: 20px;
+    gap: 18px;
+  }
+
+  .mobile-menu a {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    display: block;
+  }
+
+  /* Make mobile menu cover more space */
+  .mobile-menu.visible {
+    position: absolute;
+    top: 80px; /* Below navbar */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+}
 

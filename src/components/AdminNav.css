@@ -6,6 +6,7 @@
   border-bottom: 2px solid #333;
 }
 
+/* Links */
 .admin-link {
   color: #fff;
   text-decoration: none;
@@ -15,4 +16,24 @@
 .admin-link.active {
   color: #4caf50;
   border-bottom: 2px solid #4caf50;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .admin-nav {
+    flex-direction: column;  /* Stack links vertically */
+    gap: 0.5rem;             /* Reduce gap for mobile */
+    align-items: flex-start; /* Align links to left */
+  }
+
+  .admin-link {
+    display: block;
+    width: 100%;              /* Full width clickable area */
+    padding: 0.5rem 0;        /* Larger touch target */
+    border-bottom: 1px solid #333;
+  }
+
+  .admin-link.active {
+    border-bottom: 2px solid #4caf50;
+  }
 }
