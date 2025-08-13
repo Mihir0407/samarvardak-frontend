@@ -145,7 +145,7 @@ const Home = () => {
         performance-optimized.
       </p>
       <a
-        href="https://your-disha-construction-link.com"
+        href="https://disha-contruction-frontend.vercel.app"
         className="project-link"
         target="_blank"
         rel="noopener noreferrer"
