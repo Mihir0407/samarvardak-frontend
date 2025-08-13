@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
-import dishaConstruction from "../assets/Disha.png";
+import project3 from "../assets/project3.png";
 
 const Home = () => {
   return (
@@ -133,7 +133,7 @@ const Home = () => {
     {/* NEW PROJECT: DISHA CONSTRUCTION */}
     <div className="project-card">
       <img
-        src={dishaConstruction}
+        src={project3}
         alt="Disha Construction Website"
       />
       <h3>Disha Construction</h3>
