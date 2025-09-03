@@ -101,7 +101,7 @@ const Home = () => {
         contact information — all with a smooth, mobile-friendly design.
       </p>
       <a
-        href="https://kzmgt54padsx4odyttu3.lite.vusercontent.net/"
+        href="https://v0-sexy-honey-website.vercel.app/"
         className="project-link"
         target="_blank"
         rel="noopener noreferrer"

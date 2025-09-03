@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-
+import founderImage from '../assets/MihirS.jpg'; // Adjust the path as necessary
 const About = () => {
   return (
     <section className="about" id="about">
@@ -68,14 +68,38 @@ const About = () => {
       </div>
 
       {/* Hidden Founder Section */}
-      <div className="about-founder">
-        <h3 style={{ color: "#ff4d6d" }}>Meet the Founder</h3>
-        <p>
-          Samarvardak was founded by a visionary who prefers to stay behind the curtain — quietly dedicated
-          to lifting others into the spotlight. Their passion? Helping ideas grow into digital realities,
-          without seeking recognition. 💡
-        </p>
+      {/* Meet the Founder */}
+{/* Meet the Founder */}
+{/* Meet the Founder */}
+<div className="about-founder">
+  <h3 style={{ color: "#ff4d6d" }}>Meet the Founder</h3>
+  <div className="founder-info">
+    <div className="founder-img-wrapper">
+      <img src={founderImage} alt="Sata Mihir Hiren" className="founder-img" />
+      <div className="founder-caption">
+        <strong>Sata Mihir Hiren</strong>
+        <span>Founder, Samarvardak</span>
       </div>
+    </div>
+    <div>
+      <p>
+        <strong>Sata Mihir Hiren</strong> is the visionary behind <strong>Samarvardak</strong>, a purpose-driven digital solutions company.
+        With a deep understanding of technology, design, and the evolving digital landscape, he is committed to helping businesses grow
+        through meaningful, scalable, and elegant online experiences.
+      </p>
+      <p>
+        Passionate about the transformative potential of technology — including the rise of AI — he envisions a future where intelligent,
+        user-centric digital solutions empower businesses to thrive in a constantly changing world.
+      </p>
+      <p>
+        Guided by clarity, creativity, and care, his mission is to turn ideas into impactful realities — always with integrity and a
+        human-first approach at the core.
+      </p>
+    </div>
+  </div>
+</div>
+
+
     </section>
   );
 };
